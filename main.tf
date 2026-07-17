@@ -22,4 +22,9 @@ module "s3_website" {
   source      = "./modules/s3-website"
   name_prefix = local.name_prefix
   common_tags = local.common_tags
+
+  providers = {
+    aws     = aws
+    aws.dr  = aws.dr
+  }
 }
