@@ -21,6 +21,8 @@ jobs:
           aws-region: ap-south-1
 
       - run: terraform init
+      - name: Select workspace
+        run: terraform workspace select dev || terraform workspace new dev
       - run: terraform fmt -check -recursive
       - run: terraform validate
       - run: terraform plan -out=tfplan
