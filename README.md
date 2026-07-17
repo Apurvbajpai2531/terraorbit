@@ -6,7 +6,7 @@ TerraOrbit provisions a complete, production-style AWS environment using Terrafo
 
 > Built for the **TrainWithShubham #TerraWeek Challenge**
 
-📺 Demo Project Video
+## 📺 Demo Project Video
 
 Watch the full project demo here: https://youtu.be/lM-zPxM4NDM?si=vUUU-eTcLvJWvQb9
 ---
