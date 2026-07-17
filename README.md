@@ -6,6 +6,9 @@ TerraOrbit provisions a complete, production-style AWS environment using Terrafo
 
 > Built for the **TrainWithShubham #TerraWeek Challenge**
 
+📺 Demo Project Video
+
+Watch the full project demo here: https://youtu.be/lM-zPxM4NDM?si=vUUU-eTcLvJWvQb9
 ---
 
 ## 📐 Project Architecture
@@ -168,14 +171,6 @@ cd bootstrap && terraform destroy -auto-approve
 ```
 
 ---
-
-## ✅ Challenge Submission Checklist
-
-- [x] End-to-end project built during July 12–17, 2026
-- [x] README documents what was built each day, with screenshots as proof
-- [x] Submitted individually
-- [x] Code + README hosted in a public GitHub repository
-- [x] Mentions **TrainWithShubham #TerraWeek Challenge**
 
 ---
 
