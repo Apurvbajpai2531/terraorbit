@@ -6,6 +6,6 @@ locals {
     Challenge   = "TerraWeek"
   }, var.extra_tags)
 
-  name_prefix = "${var.project_name}-${var.environment}"
+  name_prefix = "${var.project_name}-${terraform.workspace}"
   is_prod     = var.environment == "prod" ? true : false
 }
