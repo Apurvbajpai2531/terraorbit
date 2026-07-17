@@ -133,7 +133,7 @@ All resources used are **AWS Free Tier eligible**.
 **Files added:** `versions.tf`, updated `provider.tf`
 
 📸 **Screenshot:**
-![Terraform Providers Output](./screenshots/day6-terraform-providers.tf)
+![Terraform Providers Output](./screenshots/day6-terraform-providers.png)
 
 ---
 
