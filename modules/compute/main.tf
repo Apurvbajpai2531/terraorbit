@@ -11,8 +11,8 @@ data "aws_ami" "al2023" {
 resource "aws_instance" "web" {
   ami                    = data.aws_ami.al2023.id
   instance_type          = var.instance_type
-  subnet_id              = aws_subnet.public[0].id
-  vpc_security_group_ids = [aws_security_group.web.id]
+  subnet_id              = var.subnet_id
+  vpc_security_group_ids = [var.security_group_id]
 
   user_data = <<-EOF
               #!/bin/bash
@@ -22,6 +22,5 @@ resource "aws_instance" "web" {
               systemctl start nginx
               EOF
 
-  depends_on = [aws_route_table_association.public]
-  tags       = merge(local.common_tags, { Name = "${local.name_prefix}-web" })
+  tags = merge(var.common_tags, { Name = "${var.name_prefix}-web" })
 }
