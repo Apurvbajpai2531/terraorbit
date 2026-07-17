@@ -24,7 +24,7 @@ module "s3_website" {
   common_tags = local.common_tags
 
   providers = {
-    aws     = aws
-    aws.dr  = aws.dr
+    aws    = aws
+    aws.dr = aws.dr
   }
 }
